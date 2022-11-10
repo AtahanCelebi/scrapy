@@ -62,8 +62,15 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
+############## USE THIS PIPELINE FOR MONGODB
+# ITEM_PIPELINES = {
+#    'ComputerDeals.pipelines.MongodbPipeline': 300
+# }
+
+############## USE THIS PIPELINE FOR SQLITE
 ITEM_PIPELINES = {
-   'ComputerDeals.pipelines.MongodbPipeline': 300
+   'ComputerDeals.pipelines.SQLlitePipeline': 300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
