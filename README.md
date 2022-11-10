@@ -10,3 +10,8 @@ Generate your spider
 scrapy genspider <YOUR-SPIDER-NAME> <[domain_name.com/...]>
 ```
 PS: domain name might includes refer link for starting url adress
+
+```sh
+Start crawler
+scrapy crawl <YOUR-SPIDER-NAME> 
+```
